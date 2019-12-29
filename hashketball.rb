@@ -165,7 +165,7 @@ end
 #------------------------------------------------------------------------------------------------
 
 
-
+# Returns either the whole teaam roster numbers or individual player number depending on the key
 
 def player_numbers(into)
   outof = []
@@ -182,6 +182,8 @@ def player_numbers(into)
   end
   return outof
 end
+
+#------------------------------------------------------------------------------------------------
 
 
 
