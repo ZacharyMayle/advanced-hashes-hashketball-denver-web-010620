@@ -188,6 +188,22 @@ end
 
 
 
+def player_stats(into)
+  game_hash.each do |team, team_info|
+    team_info.each do |key, value|
+      if key == :players
+        value.each do |player|
+          if into == player[:player_name]
+            player.delete(:player_name)
+            return player
+          end
+        end
+      end
+    end
+  end
+end
+
+
 
 
 
