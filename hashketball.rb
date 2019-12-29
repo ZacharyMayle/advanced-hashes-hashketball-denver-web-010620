@@ -1,5 +1,5 @@
 require 'pp'
-#                                       ENDLESS HASHES
+#                                HASH ON HASH ON HASH (on hash)
 
 def game_hash
   {
@@ -112,10 +112,10 @@ end
 
 #   Looks up player from game_hash and returns their points scored 
 
-def num_points_scored(look_up)
+def num_points_scored(name)
   game_hash.each do |team, team_info|
     team_info[:players].each do |player|
-      if player[:player_name] == look_up
+      if player[:player_name] == name
         return player[:points]
       end
     end
