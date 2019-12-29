@@ -125,6 +125,7 @@ end
 #------------------------------------------------------------------------------------------------
 
 
+
 # Looks up player from game_hash and returns their shoe size
 
 def shoe_size(name)
@@ -139,11 +140,25 @@ end
 
 #------------------------------------------------------------------------------------------------
 
+# Returns the team colors of the called team
+
+
 def team_colors(team_name)
   if team_name == "Brooklyn Nets" 
     return game_hash[:home][:colors]
   else 
     return game_hash[:away][:colors]
+  end
+end
+
+#------------------------------------------------------------------------------------------------
+
+
+# Returns the team name when called
+
+def team_names
+  game_hash.map do |team, team_info|
+    team_info[:team_name]
   end
 end
 
