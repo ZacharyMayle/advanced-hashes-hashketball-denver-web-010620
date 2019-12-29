@@ -167,7 +167,21 @@ end
 
 
 
-
+def player_numbers(into)
+  outof = []
+  game_hash.each do |team, team_info|
+    if team_info[:team_name] == into 
+      team_info.each do |key, value|
+        if key == :players
+          value.each do |player|
+          outof.push(player[:number])
+          end
+        end
+      end
+    end
+  end
+  return outof
+end
 
 
 
