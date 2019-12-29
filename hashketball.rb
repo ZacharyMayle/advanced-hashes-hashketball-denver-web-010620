@@ -206,7 +206,7 @@ end
 #------------------------------------------------------------------------------------------------
 
 
-# Finds the player with the largest shoe size and returns their 
+# Finds the player with the largest shoe size and returns their number of rebounds
 
 def big_shoe_rebounds
   big_shoe = 0
@@ -222,45 +222,4 @@ def big_shoe_rebounds
   return rebounds
 end
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#------------------------------------------------------------------------------------------------
