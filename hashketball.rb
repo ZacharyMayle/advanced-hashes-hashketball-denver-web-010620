@@ -186,14 +186,14 @@ end
 #------------------------------------------------------------------------------------------------
 
 
+# Looks up a player and returns their stats
 
-
-def player_stats(into)
+def player_stats(name)
   game_hash.each do |team, team_info|
     team_info.each do |key, value|
       if key == :players
         value.each do |player|
-          if into == player[:player_name]
+          if name == player[:player_name]
             player.delete(:player_name)
             return player
           end
@@ -202,6 +202,8 @@ def player_stats(into)
     end
   end
 end
+
+#------------------------------------------------------------------------------------------------
 
 
 
