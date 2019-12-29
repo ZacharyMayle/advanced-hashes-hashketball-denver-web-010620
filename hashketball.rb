@@ -139,14 +139,13 @@ end
 
 #------------------------------------------------------------------------------------------------
 
-def team_colors(team_name)
+def team_colors(into)
   if into == "Brooklyn Nets" 
     return game_hash[:home][:colors]
   else 
     return game_hash[:away][:colors]
   end
 end
-
 
 
 
